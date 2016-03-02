@@ -4,7 +4,7 @@ s.name = "SPFoundation"
 # 代码库的版本
 s.version = "1.0.0"
 # 简介
-s.summary = "Easy, powerful attributedLabel，support mixed with image and text, link text,image, and UIView."
+s.summary = "本尊iOS常用."
 # 主页
 s.homepage = "https://github.com/lansepan/SPFoundation"
 # 许可证书类型，要和仓库的LICENSE 的类型一致
