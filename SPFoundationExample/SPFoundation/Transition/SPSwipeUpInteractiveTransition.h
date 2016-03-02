@@ -1,5 +1,5 @@
 //
-//  SwipeUpInteractiveTransition.h
+//  SPSwipeUpInteractiveTransition.h
 //  SportsCool
 //
 //  Created by BluePan on 14/10/31.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface SwipeUpInteractiveTransition : UIPercentDrivenInteractiveTransition
+@interface SPSwipeUpInteractiveTransition : UIPercentDrivenInteractiveTransition
 
 @property (nonatomic, assign) BOOL interacting;//是否处于切换过程中
 

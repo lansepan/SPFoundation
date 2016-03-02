@@ -13,14 +13,13 @@
 		819DBDAC1C86F169000063FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819DBDAA1C86F169000063FF /* Main.storyboard */; };
 		819DBDAE1C86F169000063FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 819DBDAD1C86F169000063FF /* Assets.xcassets */; };
 		819DBDB11C86F169000063FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 819DBDAF1C86F169000063FF /* LaunchScreen.storyboard */; };
-		819DBDD51C8730F6000063FF /* BounceDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDCA1C8730F6000063FF /* BounceDismissAnimation.m */; };
-		819DBDD61C8730F6000063FF /* BouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDCC1C8730F6000063FF /* BouncePresentAnimation.m */; };
-		819DBDD71C8730F6000063FF /* NormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDCE1C8730F6000063FF /* NormalDismissAnimation.m */; };
-		819DBDD81C8730F6000063FF /* NormalPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD01C8730F6000063FF /* NormalPresentAnimation.m */; };
+		819DBDD51C8730F6000063FF /* SPBounceDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDCA1C8730F6000063FF /* SPBounceDismissAnimation.m */; };
+		819DBDD61C8730F6000063FF /* SPBouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDCC1C8730F6000063FF /* SPBouncePresentAnimation.m */; };
+		819DBDD71C8730F6000063FF /* SPNormalDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDCE1C8730F6000063FF /* SPNormalDismissAnimation.m */; };
+		819DBDD81C8730F6000063FF /* SPNormalPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD01C8730F6000063FF /* SPNormalPresentAnimation.m */; };
 		819DBDD91C8730F6000063FF /* SPCustomPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD21C8730F6000063FF /* SPCustomPresentationController.m */; };
-		819DBDDA1C8730F6000063FF /* SwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD41C8730F6000063FF /* SwipeUpInteractiveTransition.m */; };
-		819DBDDD1C8733B0000063FF /* NSData+SPBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDDC1C8733B0000063FF /* NSData+SPBase64.m */; };
-		819DBDE01C87341F000063FF /* NSData+SPGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDDF1C87341F000063FF /* NSData+SPGZIP.m */; };
+		819DBDDA1C8730F6000063FF /* SPSwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD41C8730F6000063FF /* SPSwipeUpInteractiveTransition.m */; };
+		819DBDEE1C873EE3000063FF /* NSData+SPBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDED1C873EE3000063FF /* NSData+SPBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,26 +34,24 @@
 		819DBDB01C86F169000063FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		819DBDB21C86F169000063FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		819DBDC41C872DF0000063FF /* SPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFoundation.h; sourceTree = "<group>"; };
-		819DBDC51C873025000063FF /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		819DBDC61C87304F000063FF /* PathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathMacros.h; sourceTree = "<group>"; };
-		819DBDC71C873061000063FF /* UtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacros.h; sourceTree = "<group>"; };
-		819DBDC81C873070000063FF /* DimensMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimensMacros.h; sourceTree = "<group>"; };
-		819DBDC91C8730F6000063FF /* BounceDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceDismissAnimation.h; sourceTree = "<group>"; };
-		819DBDCA1C8730F6000063FF /* BounceDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceDismissAnimation.m; sourceTree = "<group>"; };
-		819DBDCB1C8730F6000063FF /* BouncePresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BouncePresentAnimation.h; sourceTree = "<group>"; };
-		819DBDCC1C8730F6000063FF /* BouncePresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BouncePresentAnimation.m; sourceTree = "<group>"; };
-		819DBDCD1C8730F6000063FF /* NormalDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDismissAnimation.h; sourceTree = "<group>"; };
-		819DBDCE1C8730F6000063FF /* NormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDismissAnimation.m; sourceTree = "<group>"; };
-		819DBDCF1C8730F6000063FF /* NormalPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalPresentAnimation.h; sourceTree = "<group>"; };
-		819DBDD01C8730F6000063FF /* NormalPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalPresentAnimation.m; sourceTree = "<group>"; };
+		819DBDC51C873025000063FF /* SPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPMacros.h; sourceTree = "<group>"; };
+		819DBDC61C87304F000063FF /* SPPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPathMacros.h; sourceTree = "<group>"; };
+		819DBDC71C873061000063FF /* SPUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUtilsMacros.h; sourceTree = "<group>"; };
+		819DBDC81C873070000063FF /* SPDimensMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDimensMacros.h; sourceTree = "<group>"; };
+		819DBDC91C8730F6000063FF /* SPBounceDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBounceDismissAnimation.h; sourceTree = "<group>"; };
+		819DBDCA1C8730F6000063FF /* SPBounceDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBounceDismissAnimation.m; sourceTree = "<group>"; };
+		819DBDCB1C8730F6000063FF /* SPBouncePresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBouncePresentAnimation.h; sourceTree = "<group>"; };
+		819DBDCC1C8730F6000063FF /* SPBouncePresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBouncePresentAnimation.m; sourceTree = "<group>"; };
+		819DBDCD1C8730F6000063FF /* SPNormalDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNormalDismissAnimation.h; sourceTree = "<group>"; };
+		819DBDCE1C8730F6000063FF /* SPNormalDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNormalDismissAnimation.m; sourceTree = "<group>"; };
+		819DBDCF1C8730F6000063FF /* SPNormalPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNormalPresentAnimation.h; sourceTree = "<group>"; };
+		819DBDD01C8730F6000063FF /* SPNormalPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNormalPresentAnimation.m; sourceTree = "<group>"; };
 		819DBDD11C8730F6000063FF /* SPCustomPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCustomPresentationController.h; sourceTree = "<group>"; };
 		819DBDD21C8730F6000063FF /* SPCustomPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCustomPresentationController.m; sourceTree = "<group>"; };
-		819DBDD31C8730F6000063FF /* SwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
-		819DBDD41C8730F6000063FF /* SwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
-		819DBDDB1C8733B0000063FF /* NSData+SPBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SPBase64.h"; sourceTree = "<group>"; };
-		819DBDDC1C8733B0000063FF /* NSData+SPBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SPBase64.m"; sourceTree = "<group>"; };
-		819DBDDE1C87341F000063FF /* NSData+SPGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SPGZIP.h"; sourceTree = "<group>"; };
-		819DBDDF1C87341F000063FF /* NSData+SPGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SPGZIP.m"; sourceTree = "<group>"; };
+		819DBDD31C8730F6000063FF /* SPSwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
+		819DBDD41C8730F6000063FF /* SPSwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		819DBDEC1C873EE3000063FF /* NSData+SPBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SPBase64.h"; sourceTree = "<group>"; };
+		819DBDED1C873EE3000063FF /* NSData+SPBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SPBase64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +122,8 @@
 		819DBDBC1C872D7E000063FF /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				819DBDDB1C8733B0000063FF /* NSData+SPBase64.h */,
-				819DBDDC1C8733B0000063FF /* NSData+SPBase64.m */,
-				819DBDDE1C87341F000063FF /* NSData+SPGZIP.h */,
-				819DBDDF1C87341F000063FF /* NSData+SPGZIP.m */,
+				819DBDEC1C873EE3000063FF /* NSData+SPBase64.h */,
+				819DBDED1C873EE3000063FF /* NSData+SPBase64.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -150,10 +145,10 @@
 		819DBDBE1C872D9D000063FF /* Macros */ = {
 			isa = PBXGroup;
 			children = (
-				819DBDC51C873025000063FF /* Macros.h */,
-				819DBDC61C87304F000063FF /* PathMacros.h */,
-				819DBDC71C873061000063FF /* UtilsMacros.h */,
-				819DBDC81C873070000063FF /* DimensMacros.h */,
+				819DBDC51C873025000063FF /* SPMacros.h */,
+				819DBDC61C87304F000063FF /* SPPathMacros.h */,
+				819DBDC71C873061000063FF /* SPUtilsMacros.h */,
+				819DBDC81C873070000063FF /* SPDimensMacros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -161,18 +156,18 @@
 		819DBDBF1C872DAE000063FF /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				819DBDC91C8730F6000063FF /* BounceDismissAnimation.h */,
-				819DBDCA1C8730F6000063FF /* BounceDismissAnimation.m */,
-				819DBDCB1C8730F6000063FF /* BouncePresentAnimation.h */,
-				819DBDCC1C8730F6000063FF /* BouncePresentAnimation.m */,
-				819DBDCD1C8730F6000063FF /* NormalDismissAnimation.h */,
-				819DBDCE1C8730F6000063FF /* NormalDismissAnimation.m */,
-				819DBDCF1C8730F6000063FF /* NormalPresentAnimation.h */,
-				819DBDD01C8730F6000063FF /* NormalPresentAnimation.m */,
+				819DBDC91C8730F6000063FF /* SPBounceDismissAnimation.h */,
+				819DBDCA1C8730F6000063FF /* SPBounceDismissAnimation.m */,
+				819DBDCB1C8730F6000063FF /* SPBouncePresentAnimation.h */,
+				819DBDCC1C8730F6000063FF /* SPBouncePresentAnimation.m */,
+				819DBDCD1C8730F6000063FF /* SPNormalDismissAnimation.h */,
+				819DBDCE1C8730F6000063FF /* SPNormalDismissAnimation.m */,
+				819DBDCF1C8730F6000063FF /* SPNormalPresentAnimation.h */,
+				819DBDD01C8730F6000063FF /* SPNormalPresentAnimation.m */,
 				819DBDD11C8730F6000063FF /* SPCustomPresentationController.h */,
 				819DBDD21C8730F6000063FF /* SPCustomPresentationController.m */,
-				819DBDD31C8730F6000063FF /* SwipeUpInteractiveTransition.h */,
-				819DBDD41C8730F6000063FF /* SwipeUpInteractiveTransition.m */,
+				819DBDD31C8730F6000063FF /* SPSwipeUpInteractiveTransition.h */,
+				819DBDD41C8730F6000063FF /* SPSwipeUpInteractiveTransition.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -303,17 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				819DBDD71C8730F6000063FF /* NormalDismissAnimation.m in Sources */,
-				819DBDD61C8730F6000063FF /* BouncePresentAnimation.m in Sources */,
-				819DBDDA1C8730F6000063FF /* SwipeUpInteractiveTransition.m in Sources */,
+				819DBDD71C8730F6000063FF /* SPNormalDismissAnimation.m in Sources */,
+				819DBDD61C8730F6000063FF /* SPBouncePresentAnimation.m in Sources */,
+				819DBDDA1C8730F6000063FF /* SPSwipeUpInteractiveTransition.m in Sources */,
 				819DBDD91C8730F6000063FF /* SPCustomPresentationController.m in Sources */,
-				819DBDDD1C8733B0000063FF /* NSData+SPBase64.m in Sources */,
-				819DBDD81C8730F6000063FF /* NormalPresentAnimation.m in Sources */,
+				819DBDD81C8730F6000063FF /* SPNormalPresentAnimation.m in Sources */,
 				819DBDA91C86F169000063FF /* ViewController.m in Sources */,
 				819DBDA61C86F169000063FF /* AppDelegate.m in Sources */,
+				819DBDEE1C873EE3000063FF /* NSData+SPBase64.m in Sources */,
 				819DBDA31C86F169000063FF /* main.m in Sources */,
-				819DBDD51C8730F6000063FF /* BounceDismissAnimation.m in Sources */,
-				819DBDE01C87341F000063FF /* NSData+SPGZIP.m in Sources */,
+				819DBDD51C8730F6000063FF /* SPBounceDismissAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

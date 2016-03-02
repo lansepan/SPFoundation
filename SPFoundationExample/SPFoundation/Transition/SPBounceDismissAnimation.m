@@ -1,14 +1,14 @@
 //
-//  BounceDismissAnimation.m
+//  SPBounceDismissAnimation.m
 //  SportsCool
 //
 //  Created by BluePan on 14/11/6.
 //  Copyright (c) 2014年 Chengdu SportsCool Network Technology Inc. All rights reserved.
 //
 
-#import "BounceDismissAnimation.h"
+#import "SPBounceDismissAnimation.h"
 
-@implementation BounceDismissAnimation
+@implementation SPBounceDismissAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {

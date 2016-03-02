@@ -1,14 +1,14 @@
 //
-//  NormalPresentAnimation.m
+//  SPNormalPresentAnimation.m
 //  SportsCool
 //
 //  Created by BluePan on 14/11/5.
 //  Copyright (c) 2014年 Chengdu SportsCool Network Technology Inc. All rights reserved.
 //
 
-#import "NormalPresentAnimation.h"
+#import "SPNormalPresentAnimation.h"
 
-@implementation NormalPresentAnimation
+@implementation SPNormalPresentAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {

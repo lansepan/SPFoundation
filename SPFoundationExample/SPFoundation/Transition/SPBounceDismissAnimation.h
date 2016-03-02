@@ -1,5 +1,5 @@
 //
-//  BounceDismissAnimation.h
+//  SPBounceDismissAnimation.h
 //  SportsCool
 //
 //  Created by BluePan on 14/11/6.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface BounceDismissAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+@interface SPBounceDismissAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 @end

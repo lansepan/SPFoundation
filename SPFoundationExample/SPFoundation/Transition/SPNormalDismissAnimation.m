@@ -1,14 +1,14 @@
 //
-//  NormalDismissAnimation.m
+//  SPNormalDismissAnimation.m
 //  SportsCool
 //
 //  Created by BluePan on 14/10/31.
 //  Copyright (c) 2014年 Chengdu SportsCool Network Technology Inc. All rights reserved.
 //
 
-#import "NormalDismissAnimation.h"
+#import "SPNormalDismissAnimation.h"
 
-@implementation NormalDismissAnimation
+@implementation SPNormalDismissAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {

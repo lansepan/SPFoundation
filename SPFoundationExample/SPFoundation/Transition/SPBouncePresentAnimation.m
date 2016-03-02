@@ -1,14 +1,14 @@
 //
-//  BouncePresentAnimation.m
+//  SPBouncePresentAnimation.m
 //  SportsCool
 //
 //  Created by BluePan on 14/10/31.
 //  Copyright (c) 2014年 Chengdu SportsCool Network Technology Inc. All rights reserved.
 //
 
-#import "BouncePresentAnimation.h"
+#import "SPBouncePresentAnimation.h"
 
-@implementation BouncePresentAnimation
+@implementation SPBouncePresentAnimation
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {

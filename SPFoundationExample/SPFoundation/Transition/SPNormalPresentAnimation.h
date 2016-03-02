@@ -1,5 +1,5 @@
 //
-//  NormalPresentAnimation.h
+//  SPNormalPresentAnimation.h
 //  SportsCool
 //
 //  Created by BluePan on 14/11/5.
@@ -10,6 +10,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface NormalPresentAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+@interface SPNormalPresentAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 @end
