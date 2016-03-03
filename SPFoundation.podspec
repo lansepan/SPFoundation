@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # 名称 使用的时候pod search [name]
 s.name = "SPFoundation"
 # 代码库的版本
-s.version = "1.0.2"
+s.version = "1.0.3"
 # 简介
 s.summary = "本尊iOS常用."
 # 主页

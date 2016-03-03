@@ -33,7 +33,6 @@
 		819DBDAD1C86F169000063FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		819DBDB01C86F169000063FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		819DBDB21C86F169000063FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		819DBDC41C872DF0000063FF /* SPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFoundation.h; sourceTree = "<group>"; };
 		819DBDC51C873025000063FF /* SPMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPMacros.h; sourceTree = "<group>"; };
 		819DBDC61C87304F000063FF /* SPPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPathMacros.h; sourceTree = "<group>"; };
 		819DBDC71C873061000063FF /* SPUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUtilsMacros.h; sourceTree = "<group>"; };
@@ -109,7 +108,6 @@
 		819DBDB81C86F192000063FF /* SPFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				819DBDC41C872DF0000063FF /* SPFoundation.h */,
 				819DBDBE1C872D9D000063FF /* Macros */,
 				819DBDBD1C872D87000063FF /* UIKit */,
 				819DBDC01C872DBB000063FF /* Helpers */,
