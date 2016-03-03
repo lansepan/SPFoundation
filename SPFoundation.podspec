@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # 名称 使用的时候pod search [name]
 s.name = "SPFoundation"
 # 代码库的版本
-s.version = "1.0.4"
+s.version = "1.0.5"
 # 简介
 s.summary = "本尊iOS常用."
 # 主页
@@ -17,7 +17,8 @@ s.platform = :ios, "6.0"
 # 代码的Clone 地址 和 tag 版本
 s.source = { :git => "https://github.com/lansepan/SPFoundation.git", :tag => s.version.to_s }
 # 如果使用pod 需要导入哪些资源
-s.source_files = "SPFoundationExample/SPFoundation/**/*.{h,m}"
+s.source_files = "SPFoundationExample/SPFoundation/*.{h,m}","SPFoundationExample/SPFoundation/Macros/*.{h,m}","SPFoundationExample/SPFoundation/UIKit/*.{h,m}","SPFoundationExample/SPFoundation/Helpers/*.{h,m}","SPFoundationExample/SPFoundation/Transition/*.{h,m}","SPFoundationExample/SPFoundation/Foundation/*.{h,m}"
+s.public_header_files = 'SPFoundationExample/SPFoundation/SPFoundation.h'
 # s.resources = "**/*/*.bundle"
 # 框架是否使用的ARC
 s.requires_arc = true

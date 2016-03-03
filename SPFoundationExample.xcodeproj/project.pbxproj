@@ -51,6 +51,7 @@
 		819DBDD41C8730F6000063FF /* SPSwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
 		819DBDEC1C873EE3000063FF /* NSData+SPBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SPBase64.h"; sourceTree = "<group>"; };
 		819DBDED1C873EE3000063FF /* NSData+SPBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SPBase64.m"; sourceTree = "<group>"; };
+		81DACE151C880F5900C74CB5 /* SPFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFoundation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,7 @@
 		819DBDB81C86F192000063FF /* SPFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				81DACE151C880F5900C74CB5 /* SPFoundation.h */,
 				819DBDBE1C872D9D000063FF /* Macros */,
 				819DBDBD1C872D87000063FF /* UIKit */,
 				819DBDC01C872DBB000063FF /* Helpers */,
