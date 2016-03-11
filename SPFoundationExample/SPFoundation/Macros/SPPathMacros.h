@@ -6,13 +6,16 @@
 //  Copyright © 2016年 中联苹果实验室. All rights reserved.
 //
 
-#define kCachesDirectory [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]//Caches文件夹路径
+#import <Foundation/Foundation.h>
 
-#define kDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]//Document文件夹路径
+#define PATH_TEMP NSTemporaryDirectory()
 
-#define kPathTemp NSTemporaryDirectory()
+#define PATH_DOCUMENT [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES) objectAtIndex:0]
 
-#define kPathDocument               [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+#define PATH_CACHE [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
-#define kPathCache                  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+@interface SPPathMacros : NSObject
+
+@end
+
 

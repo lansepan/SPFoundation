@@ -1,0 +1,5 @@
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'APParallaxHeader'
+pod 'JZNavigationExtension'
+pod 'TAPageControl'
+pod 'SDWebImage'

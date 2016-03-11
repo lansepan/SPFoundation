@@ -6,6 +6,11 @@
 //  Copyright © 2016年 中联苹果实验室. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "SPPathMacros.h"
 #import "SPUtilsMacros.h"
 #import "SPDimensMacros.h"
+
+@interface SPMacros : NSObject
+
+@end

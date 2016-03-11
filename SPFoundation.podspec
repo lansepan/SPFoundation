@@ -1,13 +1,16 @@
 Pod::Spec.new do |s|
 s.name     = 'SPFoundation'
-s.version  = '1.0.6'
+s.version  = '1.0.7'
 s.summary  = '本尊iOS常用.'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.homepage = 'https://github.com/lansepan/SPFoundation'
 s.author = { "BluePan" => "243492212@qq.com" }
 s.source = { :git => "https://github.com/lansepan/SPFoundation.git", :tag => s.version.to_s }
-s.platform = :ios, "6.0"
+s.platform = :ios, "8.0"
 s.requires_arc = true
+s.framework = 'UIKit','MapKit','Security','Foundation'
+s.dependency 'TAPageControl'
+s.dependency 'SDWebImage'
 
 s.public_header_files = 'SPFoundationExample/SPFoundation/SPFoundation.h'
 s.source_files = 'SPFoundationExample/SPFoundation/SPFoundation.h'
@@ -25,7 +28,11 @@ ss.source_files = 'SPFoundationExample/SPFoundation/Transition/*.{h,m}'
 end
 
 s.subspec 'UIKit' do |ss|
-ss.source_files = 'SPFoundationExample/SPFoundation/UIKit/*.{h,m}'
+ss.source_files = 'SPFoundationExample/SPFoundation/UIKit/**/*.{h,m}'
+end
+
+s.subspec 'Foundation' do |ss|
+ss.source_files = 'SPFoundationExample/SPFoundation/Foundation/**/*.{h,m}'
 end
 
 end

@@ -7,3 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
+@interface SPFoundation : NSObject
+
+@end
