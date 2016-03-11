@@ -22,9 +22,9 @@
     return [NSDate year:self];
 }
 
-- (NSUInteger)hour {
-    return [NSDate hour:self];
-}
+//- (NSUInteger)hour {
+//    return [NSDate hour:self];
+//}
 
 - (NSUInteger)minute {
     return [NSDate minute:self];
@@ -72,18 +72,18 @@
     return [dayComponents year];
 }
 
-+ (NSUInteger)hour:(NSDate *)date {
-    NSCalendar *calendar = [NSCalendar currentCalendar];
-    
-#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
-    // NSDayCalendarUnit
-    NSDateComponents *dayComponents = [calendar components:(NSCalendarUnitHour) fromDate:date];
-#else
-    NSDateComponents *dayComponents = [calendar components:(NSHourCalendarUnit) fromDate:date];
-#endif
-    
-    return [dayComponents hour];
-}
+//+ (NSUInteger)hour:(NSDate *)date {
+//    NSCalendar *calendar = [NSCalendar currentCalendar];
+//    
+//#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
+//    // NSDayCalendarUnit
+//    NSDateComponents *dayComponents = [calendar components:(NSCalendarUnitHour) fromDate:date];
+//#else
+//    NSDateComponents *dayComponents = [calendar components:(NSHourCalendarUnit) fromDate:date];
+//#endif
+//    
+//    return [dayComponents hour];
+//}
 
 + (NSUInteger)minute:(NSDate *)date {
     NSCalendar *calendar = [NSCalendar currentCalendar];
@@ -129,13 +129,13 @@
     return NO;
 }
 
-- (NSString *)formatYMD {
-    return [NSDate formatYMD:self];
-}
+//- (NSString *)formatYMD {
+//    return [NSDate formatYMD:self];
+//}
 
-+ (NSString *)formatYMD:(NSDate *)date {
-    return [NSString stringWithFormat:@"%lu-%02lu-%02lu",[date year],[date month], [date day]];
-}
+//+ (NSString *)formatYMD:(NSDate *)date {
+//    return [NSString stringWithFormat:@"%lu-%02lu-%02lu",[date year],[date month], [date day]];
+//}
 
 - (NSUInteger)weeksOfMonth {
     return [NSDate weeksOfMonth:self];

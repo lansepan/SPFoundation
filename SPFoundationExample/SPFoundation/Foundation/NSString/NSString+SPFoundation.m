@@ -26,28 +26,4 @@
     return outputString;
 }
 
-//文件或文件夹大小
-- (NSInteger)fileSize
-{
-    NSFileManager *mgr = [NSFileManager defaultManager];
-    BOOL isDirectory = NO;
-    BOOL exists = [mgr fileExistsAtPath:self isDirectory:&isDirectory];
-    if (exists == NO) return 0;
-    if (isDirectory)
-    {
-        NSInteger size = 0;
-        NSDirectoryEnumerator *enumerator = [mgr enumeratorAtPath:self];
-        for (NSString *subpath in enumerator)
-        {
-            NSString *fullSubpath = [self stringByAppendingPathComponent:subpath];
-            size += [mgr attributesOfItemAtPath:fullSubpath error:nil].fileSize;
-        }
-        return size;
-    }
-    else
-    {
-        return [mgr attributesOfItemAtPath:self error:nil].fileSize;
-    }
-}
-
 @end

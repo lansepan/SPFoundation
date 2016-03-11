@@ -12,6 +12,5 @@
 @interface NSString (SPFoundation)
 
 - (NSString *)stringFromMD5;
-- (NSInteger)fileSize;//文件或文件夹大小
 
 @end

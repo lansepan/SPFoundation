@@ -16,13 +16,13 @@
 - (NSUInteger)day;
 - (NSUInteger)month;
 - (NSUInteger)year;
-- (NSUInteger)hour;
+//- (NSUInteger)hour;
 - (NSUInteger)minute;
 - (NSUInteger)second;
 + (NSUInteger)day:(NSDate *)date;
 + (NSUInteger)month:(NSDate *)date;
 + (NSUInteger)year:(NSDate *)date;
-+ (NSUInteger)hour:(NSDate *)date;
+//+ (NSUInteger)hour:(NSDate *)date;
 + (NSUInteger)minute:(NSDate *)date;
 + (NSUInteger)second:(NSDate *)date;
 
@@ -48,8 +48,8 @@
 /**
  * 获取格式化为YYYY-MM-dd格式的日期字符串
  */
-- (NSString *)formatYMD;
-+ (NSString *)formatYMD:(NSDate *)date;
+//- (NSString *)formatYMD;
+//+ (NSString *)formatYMD:(NSDate *)date;
 
 /**
  * 返回当前月一共有几周(可能为4,5,6)
