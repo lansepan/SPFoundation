@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name     = 'SPFoundation'
-s.version  = '1.0.9'
+s.version  = '1.1.0'
 s.summary  = '本尊iOS常用.'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.homepage = 'https://github.com/lansepan/SPFoundation'
@@ -8,7 +8,7 @@ s.author = { "BluePan" => "243492212@qq.com" }
 s.source = { :git => "https://github.com/lansepan/SPFoundation.git", :tag => s.version.to_s }
 s.platform = :ios, "8.0"
 s.requires_arc = true
-s.framework = 'UIKit','MapKit','Security','Foundation'
+s.framework = 'UIKit','MapKit','Security','Foundation','CoreLocation'
 s.dependency 'TAPageControl'
 s.dependency 'SDWebImage'
 

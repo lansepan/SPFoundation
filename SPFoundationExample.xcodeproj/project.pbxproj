@@ -56,6 +56,7 @@
 		812094DA1C9178E400EEDA89 /* SPKeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812094D71C9178E400EEDA89 /* SPKeyChainManager.m */; };
 		812094DB1C9178E400EEDA89 /* UIDevice+SPIdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 812094D91C9178E400EEDA89 /* UIDevice+SPIdentifierAddition.m */; };
 		812BF9991C95368700BDF395 /* YLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BF9981C95368700BDF395 /* YLDateTime.m */; };
+		812BF9BF1C9551B300BDF395 /* SPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BF9BE1C9551B300BDF395 /* SPLocationManager.m */; };
 		819DBDA31C86F169000063FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDA21C86F169000063FF /* main.m */; };
 		819DBDA61C86F169000063FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDA51C86F169000063FF /* AppDelegate.m */; };
 		819DBDA91C86F169000063FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDA81C86F169000063FF /* ViewController.m */; };
@@ -186,6 +187,8 @@
 		812094E01C917AF400EEDA89 /* SPPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPathMacros.h; sourceTree = "<group>"; };
 		812BF9971C95368700BDF395 /* YLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDateTime.h; sourceTree = "<group>"; };
 		812BF9981C95368700BDF395 /* YLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDateTime.m; sourceTree = "<group>"; };
+		812BF9BD1C9551B300BDF395 /* SPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLocationManager.h; sourceTree = "<group>"; };
+		812BF9BE1C9551B300BDF395 /* SPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLocationManager.m; sourceTree = "<group>"; };
 		819DBD9E1C86F169000063FF /* SPFoundationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPFoundationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		819DBDA21C86F169000063FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		819DBDA41C86F169000063FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -622,6 +625,8 @@
 			children = (
 				81DACE191C881AD800C74CB5 /* Helper1.h */,
 				81DACE1A1C881AD800C74CB5 /* Helper1.m */,
+				812BF9BD1C9551B300BDF395 /* SPLocationManager.h */,
+				812BF9BE1C9551B300BDF395 /* SPLocationManager.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -809,6 +814,7 @@
 				812094C91C91671300EEDA89 /* NSString+SPValidate.m in Sources */,
 				812094291C915A7400EEDA89 /* UINavigationController+SPStackManager.m in Sources */,
 				819DBDD81C8730F6000063FF /* SPNormalPresentAnimation.m in Sources */,
+				812BF9BF1C9551B300BDF395 /* SPLocationManager.m in Sources */,
 				812094A81C9166FF00EEDA89 /* NSFileHandle+SPReadLine.m in Sources */,
 				812094571C915AA200EEDA89 /* SPBarButton.m in Sources */,
 				81B73C471C8ECFCC0025A11A /* MKMapView+SPBetterMaps.m in Sources */,
