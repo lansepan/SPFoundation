@@ -69,6 +69,8 @@
 		819DBDD81C8730F6000063FF /* SPNormalPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD01C8730F6000063FF /* SPNormalPresentAnimation.m */; };
 		819DBDD91C8730F6000063FF /* SPCustomPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD21C8730F6000063FF /* SPCustomPresentationController.m */; };
 		819DBDDA1C8730F6000063FF /* SPSwipeUpInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DBDD41C8730F6000063FF /* SPSwipeUpInteractiveTransition.m */; };
+		81AFEEF41CA03EE700DEB96C /* UIButton+MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AFEEF31CA03EE700DEB96C /* UIButton+MyFont.m */; };
+		81AFEEF71CA040A400DEB96C /* UILabel+MyFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AFEEF61CA040A400DEB96C /* UILabel+MyFont.m */; };
 		81B5F7AE1C8D698600206924 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B5F7AD1C8D698600206924 /* Security.framework */; };
 		81B73C261C8EA9B60025A11A /* UIImage+SPSuperCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B73C251C8EA9B60025A11A /* UIImage+SPSuperCompress.m */; };
 		81B73C291C8EAA2E0025A11A /* UIImage+SPBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B73C281C8EAA2E0025A11A /* UIImage+SPBlur.m */; };
@@ -211,6 +213,10 @@
 		819DBDD21C8730F6000063FF /* SPCustomPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCustomPresentationController.m; sourceTree = "<group>"; };
 		819DBDD31C8730F6000063FF /* SPSwipeUpInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSwipeUpInteractiveTransition.h; sourceTree = "<group>"; };
 		819DBDD41C8730F6000063FF /* SPSwipeUpInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSwipeUpInteractiveTransition.m; sourceTree = "<group>"; };
+		81AFEEF21CA03EE700DEB96C /* UIButton+MyFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+MyFont.h"; sourceTree = "<group>"; };
+		81AFEEF31CA03EE700DEB96C /* UIButton+MyFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MyFont.m"; sourceTree = "<group>"; };
+		81AFEEF51CA040A400DEB96C /* UILabel+MyFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MyFont.h"; sourceTree = "<group>"; };
+		81AFEEF61CA040A400DEB96C /* UILabel+MyFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MyFont.m"; sourceTree = "<group>"; };
 		81B5F7AD1C8D698600206924 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		81B73C241C8EA9B60025A11A /* UIImage+SPSuperCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SPSuperCompress.h"; sourceTree = "<group>"; };
 		81B73C251C8EA9B60025A11A /* UIImage+SPSuperCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SPSuperCompress.m"; sourceTree = "<group>"; };
@@ -273,6 +279,8 @@
 		812093D61C91574300EEDA89 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				81AFEEF51CA040A400DEB96C /* UILabel+MyFont.h */,
+				81AFEEF61CA040A400DEB96C /* UILabel+MyFont.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -305,6 +313,8 @@
 				812094541C915AA200EEDA89 /* UIButton+SPSubmitting.m */,
 				812094551C915AA200EEDA89 /* UIButton+SPTouchAreaInsets.h */,
 				812094561C915AA200EEDA89 /* UIButton+SPTouchAreaInsets.m */,
+				81AFEEF21CA03EE700DEB96C /* UIButton+MyFont.h */,
+				81AFEEF31CA03EE700DEB96C /* UIButton+MyFont.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -811,7 +821,9 @@
 				819DBDDA1C8730F6000063FF /* SPSwipeUpInteractiveTransition.m in Sources */,
 				819DBDD91C8730F6000063FF /* SPCustomPresentationController.m in Sources */,
 				812094D51C91679A00EEDA89 /* SPTabBar.m in Sources */,
+				81AFEEF71CA040A400DEB96C /* UILabel+MyFont.m in Sources */,
 				812094C91C91671300EEDA89 /* NSString+SPValidate.m in Sources */,
+				81AFEEF41CA03EE700DEB96C /* UIButton+MyFont.m in Sources */,
 				812094291C915A7400EEDA89 /* UINavigationController+SPStackManager.m in Sources */,
 				819DBDD81C8730F6000063FF /* SPNormalPresentAnimation.m in Sources */,
 				812BF9BF1C9551B300BDF395 /* SPLocationManager.m in Sources */,

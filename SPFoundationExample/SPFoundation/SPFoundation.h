@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SPMacros.h"
+#import "SPPathMacros.h"
+#import "SPUtilsMacros.h"
+#import "SPDimensMacros.h"
 
 @interface SPFoundation : NSObject
 

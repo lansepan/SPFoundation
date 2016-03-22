@@ -11,10 +11,11 @@
 
 #define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
-#define LANGUAGE ([[NSLocale preferredLanguages] objectAtIndex:0])//当前语言
+#define CURRENT_LANGUAGE ([[NSLocale preferredLanguages] objectAtIndex:0])//当前语言
 
 #define RGB_COLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]//RGB颜色转换
 #define RGBA_COLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]//ARGB颜色转换
+#define RANDOM_COLOR [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1]//随机颜色
 
 #define IS_IPHONE_4_OR_LESS ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height<568.0))
 #define IS_IPHONE_5 ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone && [UIScreen mainScreen].bounds.size.height-568.0)?NO:YES)
