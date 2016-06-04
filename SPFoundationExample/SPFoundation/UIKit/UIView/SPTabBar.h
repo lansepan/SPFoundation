@@ -12,6 +12,7 @@
 
 @protocol SPTabBarDelegate <NSObject>
 
+@optional
 - (void)spTabBar:(SPTabBar *)spTabBar didSelectItem:(SPBarButton *)item;
 
 @end

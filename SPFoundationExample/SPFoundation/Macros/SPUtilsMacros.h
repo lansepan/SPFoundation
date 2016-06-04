@@ -31,7 +31,7 @@
 
 #define APP_NAME [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"]]//AppName :DoctorStation
 #define APP_DISPLAYNAME NSLocalizedString(@"CFBundleDisplayName",@"")
-#define APP_VERSION [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]]//AppVersion :Build
+#define APP_VERSION [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]]//AppVersion :Build
 #define APP_BUNDLE_IDENTIFIER [NSString stringWithFormat:@"%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]]//com.zlsoft.xx
 
 //大于等于7.0的ios版本
@@ -41,6 +41,10 @@
 
 //角度转弧度
 #define DEGREES_TO_RADIANS(d) (d * M_PI / 180)
+
+#define appDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define WeakSelf __weak typeof(self) weakSelf = self;
 
 @interface SPUtilsMacros : NSObject
 

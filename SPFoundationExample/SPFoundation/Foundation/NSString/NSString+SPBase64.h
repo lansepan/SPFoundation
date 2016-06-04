@@ -12,7 +12,9 @@
 
 + (NSString *)stringWithBase64EncodedString:(NSString *)string;
 - (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+//返回base64编码的字符串内容
 - (NSString *)base64EncodedString;
+//返回base64解码的字符串内容
 - (NSString *)base64DecodedString;
 - (NSData *)base64DecodedData;
 

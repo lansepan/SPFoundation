@@ -6,9 +6,16 @@
 //  Copyright © 2016年 易云世纪科技. All rights reserved.
 //
 
+//字体根据不同屏幕等比例缩小
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
 @interface UILabel (MyFont)
+
+//添加中划线
+- (void)addStrikethrough;
+
+//添加下划线
+- (void)addUnderline;
 
 @end

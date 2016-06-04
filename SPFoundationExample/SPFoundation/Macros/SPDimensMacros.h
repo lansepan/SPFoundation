@@ -39,6 +39,8 @@
 //不同设备的屏幕比例
 #define SCREEN_SCALE ((SCREEN_HEIGHT > 568) ? SCREEN_HEIGHT/568 : 1)
 
+#define SCALE_RATIO (SCREEN_WIDTH/414.0)
+
 // View 坐标(x,y)和宽高(width,height)
 #define X(v)                    (v).frame.origin.x
 #define Y(v)                    (v).frame.origin.y

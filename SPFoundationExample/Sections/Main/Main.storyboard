@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zJc-jW-sAG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufv-ik-NNS">
+            <objects>
+                <tabBarController id="zJc-jW-sAG" customClass="MainViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pnP-tV-AAG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TC0-nn-9OU" kind="relationship" relationship="viewControllers" id="ISj-Sg-Fhd"/>
+                        <segue destination="j71-hw-Bt4" kind="relationship" relationship="viewControllers" id="7zi-L3-0Up"/>
+                        <segue destination="AzP-f7-Nvk" kind="relationship" relationship="viewControllers" id="T8y-0M-ZKy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCr-6I-WVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-560" y="283"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="WpK-Vf-8Pw">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv0-rk-1IL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="j71-hw-Bt4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" id="Kvn-QA-sZk"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-450" y="795"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="7Se-90-sZP">
+            <objects>
+                <tableViewController storyboardIdentifier="UITableViewController-xUo-5j-XBN" id="xUo-5j-XBN" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bA2-K3-gPB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mcs-IY-zWw">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mcs-IY-zWw" id="uJK-Z6-p7s">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xUo-5j-XBN" id="3qe-CY-g7m"/>
+                            <outlet property="delegate" destination="xUo-5j-XBN" id="Sev-NM-NuV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="xyz-an-ttL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQn-di-3hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="1426"/>
+        </scene>
+        <!--Activity-->
+        <scene sceneID="Nhe-xK-oz5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3UC-8C-ex4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Activity" id="TC0-nn-9OU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jeA-jb-fYc"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-96.5" y="283"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="ppV-9r-nap">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="AzP-f7-Nvk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="BZ6-eW-Wma"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZoK-wp-BKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-701.5" y="795"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="1" green="0.35294117650000001" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+</document>

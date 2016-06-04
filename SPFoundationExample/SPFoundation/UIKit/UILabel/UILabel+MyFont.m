@@ -35,4 +35,22 @@
     return self;
 }
 
+//添加中划线
+- (void)addStrikethrough
+{
+    NSString *textStr = self.text;
+    NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:textStr attributes:attribtDic];
+    self.attributedText = attribtStr;
+}
+
+//添加下划线
+- (void)addUnderline
+{
+    NSString *textStr = self.text;
+    NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:textStr attributes:attribtDic];
+    self.attributedText = attribtStr;
+}
+
 @end
