@@ -12,10 +12,4 @@
 
 @interface UILabel (MyFont)
 
-//添加中划线
-- (void)addStrikethrough;
-
-//添加下划线
-- (void)addUnderline;
-
 @end

@@ -65,6 +65,7 @@
 		812094D51C91679A00EEDA89 /* SPTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 812094D41C91679A00EEDA89 /* SPTabBar.m */; };
 		812094DA1C9178E400EEDA89 /* SPKeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812094D71C9178E400EEDA89 /* SPKeyChainManager.m */; };
 		812094DB1C9178E400EEDA89 /* UIDevice+SPIdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 812094D91C9178E400EEDA89 /* UIDevice+SPIdentifierAddition.m */; };
+		81238B1A1D02F1490090DD1B /* UILabel+SPFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81238B191D02F1490090DD1B /* UILabel+SPFoundation.m */; };
 		812BF9991C95368700BDF395 /* YLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BF9981C95368700BDF395 /* YLDateTime.m */; };
 		812BF9BF1C9551B300BDF395 /* SPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BF9BE1C9551B300BDF395 /* SPLocationManager.m */; };
 		817B2BB21CA1156B00B8F0B0 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */; };
@@ -220,6 +221,8 @@
 		812094DE1C917AA900EEDA89 /* SPDimensMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDimensMacros.h; sourceTree = "<group>"; };
 		812094DF1C917AC900EEDA89 /* SPUtilsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUtilsMacros.h; sourceTree = "<group>"; };
 		812094E01C917AF400EEDA89 /* SPPathMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPathMacros.h; sourceTree = "<group>"; };
+		81238B181D02F1490090DD1B /* UILabel+SPFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SPFoundation.h"; sourceTree = "<group>"; };
+		81238B191D02F1490090DD1B /* UILabel+SPFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SPFoundation.m"; sourceTree = "<group>"; };
 		812BF9971C95368700BDF395 /* YLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLDateTime.h; sourceTree = "<group>"; };
 		812BF9981C95368700BDF395 /* YLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDateTime.m; sourceTree = "<group>"; };
 		812BF9BD1C9551B300BDF395 /* SPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLocationManager.h; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 			children = (
 				81AFEEF51CA040A400DEB96C /* UILabel+MyFont.h */,
 				81AFEEF61CA040A400DEB96C /* UILabel+MyFont.m */,
+				81238B181D02F1490090DD1B /* UILabel+SPFoundation.h */,
+				81238B191D02F1490090DD1B /* UILabel+SPFoundation.m */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -986,6 +991,7 @@
 				8116DF5F1C927549005EE1A2 /* UIViewController+SPBarButtonItem.m in Sources */,
 				812094241C915A6C00EEDA89 /* UIFont+SPTTF.m in Sources */,
 				812094AE1C91670600EEDA89 /* NSTimer+SPBlocks.m in Sources */,
+				81238B1A1D02F1490090DD1B /* UILabel+SPFoundation.m in Sources */,
 				812094C51C91671300EEDA89 /* NSString+SPFoundation.m in Sources */,
 				81B73C2C1C8EAA9D0025A11A /* UIImage+SPCapture.m in Sources */,
 				817B2BBE1CA1207400B8F0B0 /* HomeViewController.m in Sources */,

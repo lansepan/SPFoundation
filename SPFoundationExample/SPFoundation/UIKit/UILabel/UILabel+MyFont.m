@@ -10,47 +10,29 @@
 
 @implementation UILabel (MyFont)
 
-+ (void)load
-{
-    Method imp = class_getInstanceMethod([self class], @selector(initWithCoder:));
-    Method myImp = class_getInstanceMethod([self class], @selector(myInitWithCoder:));
-    method_exchangeImplementations(imp, myImp);
-}
-
-- (id)myInitWithCoder:(NSCoder*)aDecode
-{
-    [self myInitWithCoder:aDecode];
-    if (self)
-    {
-        //部分不像改变字体的 把tag值设置成333跳过
-        if(self.tag != 333)
-        {
-            CGFloat h = [UIScreen mainScreen].bounds.size.height;
-            CGFloat scale = ((h > 568) ? h/568 : 1);
-            
-            CGFloat fontSize = self.font.pointSize;
-            self.font = [UIFont systemFontOfSize:fontSize*scale];
-        }
-    }
-    return self;
-}
-
-//添加中划线
-- (void)addStrikethrough
-{
-    NSString *textStr = self.text;
-    NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
-    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:textStr attributes:attribtDic];
-    self.attributedText = attribtStr;
-}
-
-//添加下划线
-- (void)addUnderline
-{
-    NSString *textStr = self.text;
-    NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
-    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:textStr attributes:attribtDic];
-    self.attributedText = attribtStr;
-}
+//+ (void)load
+//{
+//    Method imp = class_getInstanceMethod([self class], @selector(initWithCoder:));
+//    Method myImp = class_getInstanceMethod([self class], @selector(myInitWithCoder:));
+//    method_exchangeImplementations(imp, myImp);
+//}
+//
+//- (id)myInitWithCoder:(NSCoder*)aDecode
+//{
+//    [self myInitWithCoder:aDecode];
+//    if (self)
+//    {
+//        //部分不像改变字体的 把tag值设置成333跳过
+//        if(self.tag != 333)
+//        {
+//            CGFloat h = [UIScreen mainScreen].bounds.size.height;
+//            CGFloat scale = ((h > 568) ? h/568 : 1);
+//            
+//            CGFloat fontSize = self.font.pointSize;
+//            self.font = [UIFont systemFontOfSize:fontSize*scale];
+//        }
+//    }
+//    return self;
+//}
 
 @end
