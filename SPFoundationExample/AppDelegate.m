@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WelcomeView.h"
+#import "SPFoundation/SPFoundation.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,15 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    WelcomeView *hvc = [[WelcomeView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    [hvc setData:[NSArray arrayWithObjects:@"1.png",@"2",@"3",@"4", nil] hidePage:NO];
+    [self.window.rootViewController.view addSubview:hvc];
+    [UIView animateWithDuration:0.25 animations:^{
+        hvc.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    }];
+    
     return YES;
 }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name     = 'SPFoundation'
-s.version  = '1.1.4'
+s.version  = '1.1.5'
 s.summary  = '本尊iOS常用.'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.homepage = 'https://github.com/lansepan/SPFoundation'
@@ -33,6 +33,10 @@ end
 
 s.subspec 'Foundation' do |ss|
 ss.source_files = 'SPFoundationExample/SPFoundation/Foundation/**/*.{h,m}'
+end
+
+s.subspec 'Classes' do |ss|
+ss.source_files = 'SPFoundationExample/SPFoundation/Classes/**/*.{h,m}'
 end
 
 end
