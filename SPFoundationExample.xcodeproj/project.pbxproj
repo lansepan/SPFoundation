@@ -68,6 +68,9 @@
 		81238B1A1D02F1490090DD1B /* UILabel+SPFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 81238B191D02F1490090DD1B /* UILabel+SPFoundation.m */; };
 		812BF9991C95368700BDF395 /* YLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BF9981C95368700BDF395 /* YLDateTime.m */; };
 		812BF9BF1C9551B300BDF395 /* SPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 812BF9BE1C9551B300BDF395 /* SPLocationManager.m */; };
+		814DD9BA1D65B5E7006C48CF /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9B91D65B5E7006C48CF /* UIButton+Extension.m */; };
+		814DD9BD1D65B5F9006C48CF /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */; };
+		814DD9C01D65B632006C48CF /* NSLayoutConstraintHairline.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */; };
 		817B2BB21CA1156B00B8F0B0 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */; };
 		817B2BB41CA1157600B8F0B0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB31CA1157600B8F0B0 /* Home.storyboard */; };
 		817B2BB61CA1157E00B8F0B0 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB51CA1157E00B8F0B0 /* Status.storyboard */; };
@@ -228,6 +231,12 @@
 		812BF9981C95368700BDF395 /* YLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLDateTime.m; sourceTree = "<group>"; };
 		812BF9BD1C9551B300BDF395 /* SPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLocationManager.h; sourceTree = "<group>"; };
 		812BF9BE1C9551B300BDF395 /* SPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLocationManager.m; sourceTree = "<group>"; };
+		814DD9B81D65B5E7006C48CF /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		814DD9B91D65B5E7006C48CF /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		814DD9BB1D65B5F9006C48CF /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		814DD9BE1D65B632006C48CF /* NSLayoutConstraintHairline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLayoutConstraintHairline.h; sourceTree = "<group>"; };
+		814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLayoutConstraintHairline.m; sourceTree = "<group>"; };
 		817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		817B2BB31CA1157600B8F0B0 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		817B2BB51CA1157E00B8F0B0 /* Status.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Status.storyboard; sourceTree = "<group>"; };
@@ -347,6 +356,8 @@
 		812093D61C91574300EEDA89 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				814DD9BB1D65B5F9006C48CF /* UILabel+Extension.h */,
+				814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */,
 				81AFEEF51CA040A400DEB96C /* UILabel+MyFont.h */,
 				81AFEEF61CA040A400DEB96C /* UILabel+MyFont.m */,
 				81238B181D02F1490090DD1B /* UILabel+SPFoundation.h */,
@@ -371,6 +382,8 @@
 			children = (
 				812094491C915AA200EEDA89 /* SPBarButton.h */,
 				8120944A1C915AA200EEDA89 /* SPBarButton.m */,
+				814DD9B81D65B5E7006C48CF /* UIButton+Extension.h */,
+				814DD9B91D65B5E7006C48CF /* UIButton+Extension.m */,
 				8120944B1C915AA200EEDA89 /* SPTextVerticalButton.h */,
 				8120944C1C915AA200EEDA89 /* SPTextVerticalButton.m */,
 				8120944D1C915AA200EEDA89 /* UIButton+SPBackgroundColor.h */,
@@ -787,6 +800,8 @@
 			children = (
 				81A1C23F1D2FF36400DC9C77 /* WelcomeView.h */,
 				81A1C2401D2FF36400DC9C77 /* WelcomeView.m */,
+				814DD9BE1D65B632006C48CF /* NSLayoutConstraintHairline.h */,
+				814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -999,8 +1014,10 @@
 				812094331C915A8500EEDA89 /* UITableViewCell+SPNIB.m in Sources */,
 				8120941B1C915A5900EEDA89 /* SPPlaceholderColorTextField.m in Sources */,
 				812094621C915AA800EEDA89 /* UITextView+SPDeleteBackWard.m in Sources */,
+				814DD9C01D65B632006C48CF /* NSLayoutConstraintHairline.m in Sources */,
 				8120941E1C915A5F00EEDA89 /* UIColor+SPHEX.m in Sources */,
 				81026C421CA3E17700AF151E /* SXTabBar.m in Sources */,
+				814DD9BA1D65B5E7006C48CF /* UIButton+Extension.m in Sources */,
 				8116DF5F1C927549005EE1A2 /* UIViewController+SPBarButtonItem.m in Sources */,
 				812094241C915A6C00EEDA89 /* UIFont+SPTTF.m in Sources */,
 				812094AE1C91670600EEDA89 /* NSTimer+SPBlocks.m in Sources */,
@@ -1047,6 +1064,7 @@
 				812094C41C91671300EEDA89 /* NSString+SPBase64.m in Sources */,
 				812094DA1C9178E400EEDA89 /* SPKeyChainManager.m in Sources */,
 				812094CF1C91671900EEDA89 /* NSDateFormatter+SPMake.m in Sources */,
+				814DD9BD1D65B5F9006C48CF /* UILabel+Extension.m in Sources */,
 				81A1C2411D2FF36400DC9C77 /* WelcomeView.m in Sources */,
 				819DBDD51C8730F6000063FF /* SPBounceDismissAnimation.m in Sources */,
 			);
