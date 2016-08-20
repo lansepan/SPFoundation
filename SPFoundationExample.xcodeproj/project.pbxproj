@@ -102,6 +102,9 @@
 		81B73C471C8ECFCC0025A11A /* MKMapView+SPBetterMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B73C461C8ECFCC0025A11A /* MKMapView+SPBetterMaps.m */; };
 		81B73C4A1C8ECFDC0025A11A /* MKMapView+SPZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B73C491C8ECFDC0025A11A /* MKMapView+SPZoomLevel.m */; };
 		81B73C4D1C8ED04B0025A11A /* MKMapView+SPMoveLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B73C4C1C8ED04B0025A11A /* MKMapView+SPMoveLogo.m */; };
+		81D963271D6708C90032D4F1 /* UIImage+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D963261D6708C90032D4F1 /* UIImage+SPExtension.m */; };
+		81F1EFFD1D68657000FA5886 /* Biology.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1EFFC1D68657000FA5886 /* Biology.m */; };
+		81F1F0001D68657C00FA5886 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F1EFFF1D68657C00FA5886 /* Person.m */; };
 		AA3A1BA41B93B488C5AE3D77 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0519CB06DB6883EC2E7E244 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -292,6 +295,13 @@
 		81B73C491C8ECFDC0025A11A /* MKMapView+SPZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+SPZoomLevel.m"; sourceTree = "<group>"; };
 		81B73C4B1C8ED04B0025A11A /* MKMapView+SPMoveLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+SPMoveLogo.h"; sourceTree = "<group>"; };
 		81B73C4C1C8ED04B0025A11A /* MKMapView+SPMoveLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+SPMoveLogo.m"; sourceTree = "<group>"; };
+		81D963251D6708C90032D4F1 /* UIImage+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SPExtension.h"; sourceTree = "<group>"; };
+		81D963261D6708C90032D4F1 /* UIImage+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SPExtension.m"; sourceTree = "<group>"; };
+		81F1EFF91D6864A700FA5886 /* SPSerializeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSerializeKit.h; sourceTree = "<group>"; };
+		81F1EFFB1D68657000FA5886 /* Biology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biology.h; sourceTree = "<group>"; };
+		81F1EFFC1D68657000FA5886 /* Biology.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Biology.m; sourceTree = "<group>"; };
+		81F1EFFE1D68657C00FA5886 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		81F1EFFF1D68657C00FA5886 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		A0519CB06DB6883EC2E7E244 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6E95F29A41E9E3CDD6839A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -563,6 +573,7 @@
 				812094B21C91670C00EEDA89 /* NSObject+SPGCD.m */,
 				812094B31C91670C00EEDA89 /* NSObject+SPKVO.h */,
 				812094B41C91670C00EEDA89 /* NSObject+SPKVO.m */,
+				81F1EFF91D6864A700FA5886 /* SPSerializeKit.h */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -590,6 +601,7 @@
 		817B2BA71CA112BC00B8F0B0 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				81F1EFFA1D68655F00FA5886 /* Model */,
 				810F21831CA14E67003FB9C7 /* Public */,
 				817B2BAC1CA1148E00B8F0B0 /* Main */,
 				817B2BAB1CA1141C00B8F0B0 /* Discovery */,
@@ -817,6 +829,8 @@
 				81B73C2B1C8EAA9D0025A11A /* UIImage+SPCapture.m */,
 				81B73C2D1C8EAAEC0025A11A /* UIImage+SPColor.h */,
 				81B73C2E1C8EAAEC0025A11A /* UIImage+SPColor.m */,
+				81D963251D6708C90032D4F1 /* UIImage+SPExtension.h */,
+				81D963261D6708C90032D4F1 /* UIImage+SPExtension.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -845,6 +859,17 @@
 				81B73C4C1C8ED04B0025A11A /* MKMapView+SPMoveLogo.m */,
 			);
 			path = MKMapView;
+			sourceTree = "<group>";
+		};
+		81F1EFFA1D68655F00FA5886 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81F1EFFB1D68657000FA5886 /* Biology.h */,
+				81F1EFFC1D68657000FA5886 /* Biology.m */,
+				81F1EFFE1D68657C00FA5886 /* Person.h */,
+				81F1EFFF1D68657C00FA5886 /* Person.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9D72BCD51933D27566E0D851 /* Pods */ = {
@@ -1030,8 +1055,11 @@
 				8120945B1C915AA200EEDA89 /* UIButton+SPIndicatior.m in Sources */,
 				812094591C915AA200EEDA89 /* UIButton+SPBackgroundColor.m in Sources */,
 				812094581C915AA200EEDA89 /* SPTextVerticalButton.m in Sources */,
+				81F1EFFD1D68657000FA5886 /* Biology.m in Sources */,
+				81D963271D6708C90032D4F1 /* UIImage+SPExtension.m in Sources */,
 				8120945C1C915AA200EEDA89 /* UIButton+SPSubmitting.m in Sources */,
 				812094181C915A5300EEDA89 /* UIApplication+SPKeyboardFrame.m in Sources */,
+				81F1F0001D68657C00FA5886 /* Person.m in Sources */,
 				812094361C915A8C00EEDA89 /* UIWindow+SPHierarchy.m in Sources */,
 				810F21871CA19BAB003FB9C7 /* IB_UITextField.m in Sources */,
 				8116DF681C927B40005EE1A2 /* SPSegmentViewController.m in Sources */,

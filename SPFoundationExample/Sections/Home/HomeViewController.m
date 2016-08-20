@@ -9,6 +9,10 @@
 #import "HomeViewController.h"
 #import "IBDesignable/IBDesignableViewController.h"
 #import "SPHelper.h"
+#import "Person.h"
+#import "Biology.h"
+#import <objc/runtime.h>
+#import "SPSerializeKit.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -30,6 +34,30 @@
     self.tableContent.rowHeight = UITableViewAutomaticDimension;
     self.tableContent.estimatedRowHeight = 44.0;
     self.tableContent.tableFooterView = [UIView new];
+    
+    Person *person = [[Person alloc] init];
+    person.name = @"wengzilin";
+    person.age = 26;
+    [person setValue:@"laoweng" forKey:@"_father"];
+    //set value of superClass
+    person.introInBiology = @"I am a biology on earth";
+    //[person setValue:@(10000) forKey:@"_hairCountInBiology"];//no access to private instance in super
+    
+    
+    NSLog(@"Before archiver:\n%@", [person description]);
+    
+    WZLSERIALIZE_ARCHIVE(person, @"Person", [self filePath]);
+    Person *thePerson = nil;
+    WZLSERIALIZE_UNARCHIVE(thePerson, @"Person", [self filePath]);
+    
+    Person *copyPerson = [person copy];
+    NSLog(@"copyPerson:%@", [copyPerson description]);
+}
+
+- (NSString *)filePath
+{
+    NSString *archiverFilePath = [NSString stringWithFormat:@"%@/archiver", NSHomeDirectory()];
+    return archiverFilePath;
 }
 
 #pragma mark - UITableViewDelegate Methods
