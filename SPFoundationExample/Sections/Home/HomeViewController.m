@@ -9,7 +9,6 @@
 #import "HomeViewController.h"
 #import "IBDesignable/IBDesignableViewController.h"
 #import "SPHelper.h"
-#import <objc/runtime.h>
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
