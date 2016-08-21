@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name     = 'SPFoundation'
-s.version  = '1.1.8'
+s.version  = '1.1.6'
 s.summary  = '本尊iOS常用.'
 s.license = { :type => 'MIT', :file => 'LICENSE' }
 s.homepage = 'https://github.com/lansepan/SPFoundation'
