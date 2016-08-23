@@ -72,6 +72,7 @@
 		814DD9BA1D65B5E7006C48CF /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9B91D65B5E7006C48CF /* UIButton+Extension.m */; };
 		814DD9BD1D65B5F9006C48CF /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */; };
 		814DD9C01D65B632006C48CF /* NSLayoutConstraintHairline.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */; };
+		8172CE081D6C36EB009C0CA7 /* NSString+LocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172CE071D6C36EB009C0CA7 /* NSString+LocalizedString.m */; };
 		817B2BB21CA1156B00B8F0B0 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */; };
 		817B2BB41CA1157600B8F0B0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB31CA1157600B8F0B0 /* Home.storyboard */; };
 		817B2BB61CA1157E00B8F0B0 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB51CA1157E00B8F0B0 /* Status.storyboard */; };
@@ -241,6 +242,8 @@
 		814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
 		814DD9BE1D65B632006C48CF /* NSLayoutConstraintHairline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLayoutConstraintHairline.h; sourceTree = "<group>"; };
 		814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLayoutConstraintHairline.m; sourceTree = "<group>"; };
+		8172CE061D6C36EB009C0CA7 /* NSString+LocalizedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LocalizedString.h"; sourceTree = "<group>"; };
+		8172CE071D6C36EB009C0CA7 /* NSString+LocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LocalizedString.m"; sourceTree = "<group>"; };
 		817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
 		817B2BB31CA1157600B8F0B0 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		817B2BB51CA1157E00B8F0B0 /* Status.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Status.storyboard; sourceTree = "<group>"; };
@@ -556,6 +559,8 @@
 				812094C11C91671300EEDA89 /* NSString+SPTrims.m */,
 				812094C21C91671300EEDA89 /* NSString+SPValidate.h */,
 				812094C31C91671300EEDA89 /* NSString+SPValidate.m */,
+				8172CE061D6C36EB009C0CA7 /* NSString+LocalizedString.h */,
+				8172CE071D6C36EB009C0CA7 /* NSString+LocalizedString.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -1039,6 +1044,7 @@
 				812094661C915AB800EEDA89 /* UIWebView+SPFoundation.m in Sources */,
 				812094331C915A8500EEDA89 /* UITableViewCell+SPNIB.m in Sources */,
 				8120941B1C915A5900EEDA89 /* SPPlaceholderColorTextField.m in Sources */,
+				8172CE081D6C36EB009C0CA7 /* NSString+LocalizedString.m in Sources */,
 				812094621C915AA800EEDA89 /* UITextView+SPDeleteBackWard.m in Sources */,
 				814DD9C01D65B632006C48CF /* NSLayoutConstraintHairline.m in Sources */,
 				8120941E1C915A5F00EEDA89 /* UIColor+SPHEX.m in Sources */,
