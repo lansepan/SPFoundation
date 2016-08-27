@@ -82,6 +82,82 @@ return sharedInstance;\
 
 #define REMOVEKVO(obj, obs, key) [obj removeObserver:obs forKeyPath:key context:nil];
 
+//是否为空或是[NSNull null]
+#define NotNilAndNull(_ref)  (((_ref) != nil) && (![(_ref) isEqual:[NSNull null]]))
+#define IsNilOrNull(_ref)   (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]))
+
+//字符串是否为空
+#define IsStrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref)isEqualToString:@""]))
+//数组是否为空
+#define IsArrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
+
+#pragma mark - 释放
+
+#if !__has_feature(objc_arc)
+
+/*safe release*/
+#undef TT_RELEASE_SAFELY
+#define TT_RELEASE_SAFELY(__REF) \
+{\
+if (nil != (__REF)) \
+{\
+CFRelease(__REF); \
+__REF = nil;\
+}\
+}
+
+//view安全释放
+#undef TTVIEW_RELEASE_SAFELY
+#define TTVIEW_RELEASE_SAFELY(__REF) \
+{\
+if (nil != (__REF))\
+{\
+[__REF removeFromSuperview];\
+CFRelease(__REF);\
+__REF = nil;\
+}\
+}
+
+//释放定时器
+#undef TT_INVALIDATE_TIMER
+#define TT_INVALIDATE_TIMER(__TIMER) \
+{\
+[__TIMER invalidate];\
+[__TIMER release];\
+__TIMER = nil;\
+}
+
+#else
+
+/*safe release*/
+#undef TT_RELEASE_SAFELY
+#define TT_RELEASE_SAFELY(__REF) \
+{\
+if (nil != (__REF)) \
+{\
+__REF = nil;\
+}\
+}
+
+//view安全释放
+#define TTVIEW_RELEASE_SAFELY(__REF) \
+{\
+if (nil != (__REF))\
+{\
+[__REF removeFromSuperview];\
+__REF = nil;\
+}\
+}
+
+//释放定时器
+#define TT_INVALIDATE_TIMER(__TIMER) \
+{\
+[__TIMER invalidate];\
+__TIMER = nil;\
+}
+
+#endif
+
 @interface SPUtilsMacros : NSObject
 
 @end
