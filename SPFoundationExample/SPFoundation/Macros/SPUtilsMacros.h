@@ -45,7 +45,42 @@
 
 #define appDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
 
+//当前App状态
+#define IN_BACKEND ([[UIApplication sharedApplication] applicationState] == UIApplicationStateBackground)
+
+#pragma mark - 创建单例
+//单例定义
+#define SHARED_INSTANCE + (instancetype)sharedInstance;
+
+//单例实现
+#ifndef SHARED_IMPLEMENT
+#define SHARED_IMPLEMENT(InstanceName) \
++ (instancetype)sharedInstance \
+{   \
+static InstanceName * sharedInstance; \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+sharedInstance = [[InstanceName alloc] init]; \
+}); \
+return sharedInstance;\
+}
+#endif
+
+#ifdef DEBUG
+#define BLLog(format, ...)             NSLog(format, ## __VA_ARGS__)
+#else
+#define BLLog(format, ...)
+#endif
+
 #define WeakSelf __weak typeof(self) weakSelf = self;
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+
+#pragma mark - KVO
+#define ADDKVO(obj, obs, key) [obj addObserver:obs forKeyPath:key options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+
+#define REMOVEKVO(obj, obs, key) [obj removeObserver:obs forKeyPath:key context:nil];
 
 @interface SPUtilsMacros : NSObject
 
