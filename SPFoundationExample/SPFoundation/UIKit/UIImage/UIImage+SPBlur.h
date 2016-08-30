@@ -25,4 +25,15 @@ FOUNDATION_EXPORT const unsigned char ImageEffectsVersionString[];
             saturationDeltaFactor:(CGFloat)saturationDeltaFactor
                         maskImage:(UIImage *)maskImage;
 
+/**
+ *  @author leon, 16-01-12 11:01:08
+ *
+ *  高斯模糊
+ *
+ *  @param blurLevel 模糊级别
+ *
+ *  @return 模糊后图片
+ */
+- (UIImage *)gaussianBlurWithBlurLevel:(CGFloat)blurLevel;
+
 @end

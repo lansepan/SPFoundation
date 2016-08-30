@@ -69,6 +69,92 @@
     return [self blurredImageWithSize:blurSize tintColor:nil saturationDeltaFactor:1.0 maskImage:nil];
 }
 
+- (UIImage *)gaussianBlurWithBlurLevel:(CGFloat)blurLevel {
+    if (blurLevel < 0.f || blurLevel > 1.f) {
+        blurLevel = 0.5f;
+    }
+    int boxSize = (int)(blurLevel * 100);
+    boxSize = boxSize - (boxSize % 2) + 1;
+    
+    CGImageRef cgImage = self.CGImage;
+    
+    vImage_Buffer inBuffer, outBuffer;
+    vImage_Error error;
+    
+    void *pixelBuffer;
+    
+    CGDataProviderRef inProvider = CGImageGetDataProvider(cgImage);
+    CFDataRef inBitmapData = CGDataProviderCopyData(inProvider);
+    
+    inBuffer.width = CGImageGetWidth(cgImage);
+    inBuffer.height = CGImageGetHeight(cgImage);
+    inBuffer.rowBytes = CGImageGetBytesPerRow(cgImage);
+    
+    inBuffer.data = (void*)CFDataGetBytePtr(inBitmapData);
+    
+    pixelBuffer = malloc(CGImageGetBytesPerRow(cgImage) *
+                         CGImageGetHeight(cgImage));
+    
+    if(pixelBuffer == NULL) {
+        NSLog(@"No pixelbuffer");
+    }
+    
+    outBuffer.data = pixelBuffer;
+    outBuffer.width = CGImageGetWidth(cgImage);
+    outBuffer.height = CGImageGetHeight(cgImage);
+    outBuffer.rowBytes = CGImageGetBytesPerRow(cgImage);
+    
+    void *pixelBuffer2 = malloc(CGImageGetBytesPerRow(cgImage) * CGImageGetHeight(cgImage));
+    vImage_Buffer outBuffer2;
+    outBuffer2.data = pixelBuffer2;
+    outBuffer2.width = CGImageGetWidth(cgImage);
+    outBuffer2.height = CGImageGetHeight(cgImage);
+    outBuffer2.rowBytes = CGImageGetBytesPerRow(cgImage);
+    
+    void *pixelBuffer3 = malloc(CGImageGetBytesPerRow(cgImage) * CGImageGetHeight(cgImage));
+    vImage_Buffer outBuffer3;
+    outBuffer3.data = pixelBuffer3;
+    outBuffer3.width = CGImageGetWidth(cgImage);
+    outBuffer3.height = CGImageGetHeight(cgImage);
+    outBuffer3.rowBytes = CGImageGetBytesPerRow(cgImage);
+    
+    error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer2, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    if(!error) {
+        error = vImageBoxConvolve_ARGB8888(&outBuffer2, &outBuffer3, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    }
+    
+    if(!error) {
+        error = vImageBoxConvolve_ARGB8888(&outBuffer3, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
+    }
+    if(error) {
+        NSLog(@"Convolve error %ld", error);
+    }
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGContextRef ctx = CGBitmapContextCreate(
+                                             outBuffer.data,
+                                             outBuffer.width,
+                                             outBuffer.height,
+                                             8,
+                                             outBuffer.rowBytes,
+                                             colorSpace,
+                                             kCGImageAlphaNoneSkipLast);
+    CGImageRef imageRef = CGBitmapContextCreateImage (ctx);
+    UIImage *blurryImage = [UIImage imageWithCGImage:imageRef];
+    
+    //clean up
+    CGContextRelease(ctx);
+    CGColorSpaceRelease(colorSpace);
+    
+    free(pixelBuffer);
+    free(pixelBuffer2);
+    free(pixelBuffer3);
+    CFRelease(inBitmapData);
+    
+    CGImageRelease(imageRef);
+    
+    return blurryImage;
+}
+
 #pragma mark -
 #pragma mark - Implementation
 

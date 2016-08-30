@@ -43,4 +43,24 @@
 ///对指定图片进行拉伸
 + (UIImage*)resizableImage:(NSString *)name;
 
+/**
+ *  @author leon, 15-12-07 09:12:10
+ *
+ *  水平或者垂直拼接一组图片
+ *
+ *  @param images 图片组
+ *  @param vOrh   如果是YES那么锤子拼接，如果是NO那么水平拼接
+ *
+ *  @return 拼接完成后的图片
+ */
++ (UIImage *)joinImages:(NSArray *)images vOrh:(BOOL)vOrh;
+
++ (UIImage *)captureView:(UIView *)view;
+
++ (UIImage *)captureContentScrollView:(UIScrollView *)scrollView;
+
++ (UIImage *)imageFromColor:(UIColor *)imageColor;
+
++ (UIImage *)imageFromColor:(UIColor *)imageColor frame:(CGRect)frame;
+
 @end

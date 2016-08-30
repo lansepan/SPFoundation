@@ -34,4 +34,9 @@
  */
 + (UIImage *)screenshotWithView:(UIView *)aView limitWidth:(CGFloat)maxWidth;
 
+//等比压缩图片到指定宽
+- (UIImage *)compressImage:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth;
+
++ (UIImage *)createImageWithColor:(UIColor *)color;
+
 @end
