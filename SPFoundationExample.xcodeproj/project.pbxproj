@@ -72,6 +72,8 @@
 		814DD9BA1D65B5E7006C48CF /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9B91D65B5E7006C48CF /* UIButton+Extension.m */; };
 		814DD9BD1D65B5F9006C48CF /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */; };
 		814DD9C01D65B632006C48CF /* NSLayoutConstraintHairline.m in Sources */ = {isa = PBXBuildFile; fileRef = 814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */; };
+		815145151D755FB000CD402A /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 815145141D755FB000CD402A /* NSString+Utils.m */; };
+		8151451F1D7560DD00CD402A /* UIView+Dynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8151451E1D7560DD00CD402A /* UIView+Dynamic.m */; };
 		8172CE081D6C36EB009C0CA7 /* NSString+LocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8172CE071D6C36EB009C0CA7 /* NSString+LocalizedString.m */; };
 		817B2BB21CA1156B00B8F0B0 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */; };
 		817B2BB41CA1157600B8F0B0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817B2BB31CA1157600B8F0B0 /* Home.storyboard */; };
@@ -242,6 +244,10 @@
 		814DD9BC1D65B5F9006C48CF /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
 		814DD9BE1D65B632006C48CF /* NSLayoutConstraintHairline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLayoutConstraintHairline.h; sourceTree = "<group>"; };
 		814DD9BF1D65B632006C48CF /* NSLayoutConstraintHairline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLayoutConstraintHairline.m; sourceTree = "<group>"; };
+		815145131D755FB000CD402A /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		815145141D755FB000CD402A /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		8151451D1D7560DD00CD402A /* UIView+Dynamic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Dynamic.h"; sourceTree = "<group>"; };
+		8151451E1D7560DD00CD402A /* UIView+Dynamic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Dynamic.m"; sourceTree = "<group>"; };
 		8172CE061D6C36EB009C0CA7 /* NSString+LocalizedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LocalizedString.h"; sourceTree = "<group>"; };
 		8172CE071D6C36EB009C0CA7 /* NSString+LocalizedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LocalizedString.m"; sourceTree = "<group>"; };
 		817B2BB11CA1156B00B8F0B0 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
@@ -429,6 +435,8 @@
 				812094381C915A9300EEDA89 /* SPPageView.m */,
 				812094D31C91679A00EEDA89 /* SPTabBar.h */,
 				812094D41C91679A00EEDA89 /* SPTabBar.m */,
+				8151451D1D7560DD00CD402A /* UIView+Dynamic.h */,
+				8151451E1D7560DD00CD402A /* UIView+Dynamic.m */,
 				812094391C915A9300EEDA89 /* UIView+SPConstraints.h */,
 				8120943A1C915A9300EEDA89 /* UIView+SPConstraints.m */,
 				8120943B1C915A9300EEDA89 /* UIView+SPFoundation.h */,
@@ -547,6 +555,8 @@
 		812094A21C91668400EEDA89 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				815145131D755FB000CD402A /* NSString+Utils.h */,
+				815145141D755FB000CD402A /* NSString+Utils.m */,
 				812094B81C91671300EEDA89 /* NSString+SPBase64.h */,
 				812094B91C91671300EEDA89 /* NSString+SPBase64.m */,
 				812094BA1C91671300EEDA89 /* NSString+SPFoundation.h */,
@@ -1029,6 +1039,7 @@
 				81AFEEF41CA03EE700DEB96C /* UIButton+MyFont.m in Sources */,
 				812094291C915A7400EEDA89 /* UINavigationController+SPStackManager.m in Sources */,
 				81026C381CA3DE8800AF151E /* ViewController2.m in Sources */,
+				815145151D755FB000CD402A /* NSString+Utils.m in Sources */,
 				819DBDD81C8730F6000063FF /* SPNormalPresentAnimation.m in Sources */,
 				812BF9BF1C9551B300BDF395 /* SPLocationManager.m in Sources */,
 				812094A81C9166FF00EEDA89 /* NSFileHandle+SPReadLine.m in Sources */,
@@ -1071,6 +1082,7 @@
 				8116DF681C927B40005EE1A2 /* SPSegmentViewController.m in Sources */,
 				81026C3F1CA3E16D00AF151E /* SXBarButton.m in Sources */,
 				812094471C915A9A00EEDA89 /* UIScrollView+SPAddition.m in Sources */,
+				8151451F1D7560DD00CD402A /* UIView+Dynamic.m in Sources */,
 				812094DB1C9178E400EEDA89 /* UIDevice+SPIdentifierAddition.m in Sources */,
 				812094C81C91671300EEDA89 /* NSString+SPTrims.m in Sources */,
 				812094401C915A9300EEDA89 /* UIView+SPConstraints.m in Sources */,
