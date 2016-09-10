@@ -7,6 +7,7 @@
 //
 
 #import "NSString+SPFoundation.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (SPFoundation)
 
