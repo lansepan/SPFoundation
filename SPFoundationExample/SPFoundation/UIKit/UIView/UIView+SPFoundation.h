@@ -43,7 +43,6 @@
 - (void)scaleBy:(CGFloat)scaleFactor;
 - (void)fitInSize:(CGSize)aSize;
 /** 获取View所在的控制器 */
-- (UIViewController *)viewController;
 
 #pragma mark - 其它的效果😎
 
