@@ -42,7 +42,6 @@
 - (void)moveBy:(CGPoint)delta;
 - (void)scaleBy:(CGFloat)scaleFactor;
 - (void)fitInSize:(CGSize)aSize;
-/** 获取View所在的控制器 */
 
 #pragma mark - 其它的效果😎
 
