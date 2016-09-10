@@ -41,6 +41,14 @@
 
 #define SCALE_RATIO (SCREEN_WIDTH/414.0)
 
+#define SCALE_RATIO_414 (SCREEN_WIDTH/414.0)
+
+#define SCALE_RATIO_320 (SCREEN_WIDTH/320.0)
+
+#define SCALE_RATIO_375 (SCREEN_WIDTH/375.0)
+
+#define SCALE_RATIO_414 (SCREEN_WIDTH/414.0)
+
 // View 坐标(x,y)和宽高(width,height)
 #define X(v)                    (v).frame.origin.x
 #define Y(v)                    (v).frame.origin.y

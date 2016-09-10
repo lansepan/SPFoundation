@@ -76,6 +76,8 @@ return sharedInstance;\
 
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+#define StrIsEmpty(str) ([str isKindOfClass:[NSNull class]] || [str length] < 1 ? YES : NO || [str isEqualToString:@"(null)"] || [str isEqualToString:@"null"])
+
 
 #pragma mark - KVO
 #define ADDKVO(obj, obs, key) [obj addObserver:obs forKeyPath:key options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
@@ -157,6 +159,31 @@ __TIMER = nil;\
 }
 
 #endif
+
+// 判断当前系统是否使用公制单位
+#define isMetricUnits [[[NSLocale currentLocale] objectForKey:NSLocaleUsesMetricSystem] boolValue]
+
+#define BLSTR(key) NSLocalizedString(key, nil)
+
+#define bl_dispatch_mainThread_sync_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_sync(dispatch_get_main_queue(), block);\
+}
+
+#define bl_dispatch_mainThread_async_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_async(dispatch_get_main_queue(), block);\
+}
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) \
+([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+//判断版本
+#define IOS_VERSION(x) (([[[UIDevice currentDevice] systemVersion] floatValue] >= x)? (YES):(NO))
 
 @interface SPUtilsMacros : NSObject
 
